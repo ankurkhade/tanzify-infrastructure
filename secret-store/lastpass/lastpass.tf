@@ -18,6 +18,6 @@ data "lastpass_secret" "credentials" {
   id = var.credential-LastPassID
 }
 
-output "id" {
-  value = data.lastpass_secret.credentials.id
+output "password" {
+  value = data.lastpass_secret.credentials.password
 }
